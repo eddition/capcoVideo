@@ -1,0 +1,24 @@
+
+ <div ng-controller="MainCtrl">
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content"  bind-html-unsafe="selectedVideo.code">
+        {{selectedVideo.code}}
+    </div>
+  </div>
+</div>
+  
+  <div class='container' style="text-align:center">
+      <a href=""><h3>home</h3></a>
+      <a href=""><h3>browse</h3></a>
+      <a href=""><h3>subscriptions</h3></a>
+  </div>
+
+  <div style='margin-left:20px' class="row video-list">
+
+    <div class="col-md-3 video-container" ng-repeat="video in videos">
+      <a data-toggle="modal" data-target=".bd-example-modal-lg" ng-click="select($index)"><img src="{{video.thumbnail}}" width="300" height="220"></a>
+    </div>
+  </div>
+ </div>
