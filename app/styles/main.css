@@ -39,12 +39,13 @@ h3{
   margin:0 auto;
 }
 
-.video-list{
-  margin-top: 5em;
+img.thumbnails {
+  width: 100%;
+  height: auto;
 }
-
 .video-container {
-  margin-bottom: 5em;
+  margin-top: 2em;
+  text-align: center;
 }
 
 /* Custom page footer */

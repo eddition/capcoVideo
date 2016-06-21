@@ -15,10 +15,14 @@
       <a href=""><h3>subscriptions</h3></a>
   </div>
 
-  <div style='margin-left:20px' class="row video-list">
+  <div style='margin-left:20px' class="row">
 
     <div class="col-md-3 video-container" ng-repeat="video in videos">
-      <a data-toggle="modal" data-target=".bd-example-modal-lg" ng-click="select($index)"><img src="{{video.thumbnail}}" width="300" height="220"></a>
+      <a data-toggle="modal" data-target=".bd-example-modal-lg" ng-click="select($index)">
+        <img class='thumbnails' src="{{video.thumbnail}}">
+        <p style='color:gray'>{{video.title}}</p>
+      </a>
     </div>
   </div>
  </div>
+a
