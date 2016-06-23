@@ -7,86 +7,86 @@
  * # MainCtrl
  * Controller of the capcoVideoApp
  */
- 
+
 var capcoVideoApp = angular.module('capcoVideoApp');
 
 capcoVideoApp.controller('MainCtrl', function ($scope) {
 
 	$scope.videos=[
 	    {
-	        "title":"The Dark Knight Rises - Official Trailer 3 [HD]",
+	        "title":"Some Blonde Girl",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/9l3DDSXkEQ0' frameborder='0' allowfullscreen></iframe>",
 	        "tags":["funny", "internal"],
 	        "thumbnail": "/images/thumbnails/thumb1.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Trailer 2 [HD]",
+	        "title":"An aged Jennifer Aniston",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/1KgCP0QyfdY' frameborder='0' allowfullscreen></iframe>",
 			"tags":["sales", "internal"],
 			"thumbnail": "/images/thumbnails/thumb2.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Teaser Trailer [HD]",
+	        "title":"Thor fo-shore",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/kqF8lcKTLw0' frameborder='0' allowfullscreen></iframe>",
 			"tags":["client", "internal"],
 			"thumbnail": "/images/thumbnails/thumb3.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Rise TV Spot [HD]",
+	        "title":"James Franco in Prison",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/fNGAYD31fMo' frameborder='0' allowfullscreen></iframe>",
 			"tags":["funny", "internal"],
 			"thumbnail": "/images/thumbnails/thumb4.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Back TV Spot [HD]",
+	        "title":"Hot Tube Time Machine",
 	        "code":'<iframe width="960" height="540" src="http://www.youtube.com/embed/gimGOlbnNjk" frameborder="0" allowfullscreen></iframe>',
-	        "tags":["funny", "client"],
+	        "tags":["funny", "client", 'test'],
 	        "thumbnail": "/images/thumbnails/thumb5.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Trailer 3 [HD]",
+	        "title":"Black Widow Grillin",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/9l3DDSXkEQ0' frameborder='0' allowfullscreen></iframe>",
 	        "tags":["funny", "internal"],
 	        "thumbnail": "/images/thumbnails/thumb6.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Trailer 2 [HD]",
+	        "title":"Stop Crying",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/1KgCP0QyfdY' frameborder='0' allowfullscreen></iframe>",
 			"tags":["sales", "internal"],
 			"thumbnail": "/images/thumbnails/thumb7.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Teaser Trailer [HD]",
+	        "title":"The Last Nazi",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/kqF8lcKTLw0' frameborder='0' allowfullscreen></iframe>",
 			"tags":["client", "internal"],
 			"thumbnail": "/images/thumbnails/thumb8.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Rise TV Spot [HD]",
+	        "title":"Street Fighters the Animated Series",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/fNGAYD31fMo' frameborder='0' allowfullscreen></iframe>",
 			"tags":["funny", "internal"],
 			"thumbnail": "/images/thumbnails/thumb9.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Back TV Spot [HD]",
+	        "title":"Ferris Bueler",
 	        "code":'<iframe width="960" height="540" src="http://www.youtube.com/embed/gimGOlbnNjk" frameborder="0" allowfullscreen></iframe>',
 	        "tags":["funny", "client"],
 	        "thumbnail": "/images/thumbnails/thumb10.jpg"
 	    },
 	    	    {
-	        "title":"The Dark Knight Rises - Official Trailer 3 [HD]",
+	        "title":"Tom Hardy",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/9l3DDSXkEQ0' frameborder='0' allowfullscreen></iframe>",
 	        "tags":["funny", "internal"],
 	        "thumbnail": "/images/thumbnails/thumb11.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Trailer 2 [HD]",
+	        "title":"The Sixth Sense 2",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/1KgCP0QyfdY' frameborder='0' allowfullscreen></iframe>",
 			"tags":["sales", "internal"],
 			"thumbnail": "/images/thumbnails/thumb12.jpg"
 	    },
 	    {
-	        "title":"The Dark Knight Rises - Official Teaser Trailer [HD]",
+	        "title":"The Dark Knight Falls",
 	        "code":"<iframe width='960' height='540' src='http://www.youtube.com/embed/kqF8lcKTLw0' frameborder='0' allowfullscreen></iframe>",
 			"tags":["client", "internal"],
 			"thumbnail": "/images/thumbnails/thumb13.jpg"
@@ -95,7 +95,12 @@ capcoVideoApp.controller('MainCtrl', function ($scope) {
 
 	$scope.select=function(index){
 		$scope.selectedVideo = $scope.videos[index];
-	}
+	};
+
+	// $scope.focusOnInput=function(){
+	// 	debugger;
+	// 	document.getElementById('video-filter-input').focus();
+	// };
 
   });
 

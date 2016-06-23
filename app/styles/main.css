@@ -33,6 +33,16 @@ h3{
   position: absolute;
   float: left;
 }
+
+.glyphicon-search:hover {
+  cursor: pointer;
+}
+
+input#video-filter-input{
+  border: none;
+  outline:none;
+}
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -85,14 +95,15 @@ img.thumbnails:hover {
 }
 
 /* Main marketing message and sign up button */
-.jumbotron {
+/*.jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
+}*/
+
+/*.jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
-}
+}*/
 
 /* Supporting marketing content */
 .marketing {
