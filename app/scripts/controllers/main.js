@@ -7,8 +7,10 @@
  * # MainCtrl
  * Controller of the capcoVideoApp
  */
-angular.module('capcoVideoApp')
-  .controller('MainCtrl', function ($scope) {
+ 
+var capcoVideoApp = angular.module('capcoVideoApp');
+
+capcoVideoApp.controller('MainCtrl', function ($scope) {
 
 	$scope.videos=[
 	    {
@@ -95,9 +97,10 @@ angular.module('capcoVideoApp')
 		$scope.selectedVideo = $scope.videos[index];
 	}
 
-  })
+  });
 
-.directive('bindHtmlUnsafe', function( $compile ) {
+//Custom directive to embed HTML
+capcoVideoApp.directive('bindHtmlUnsafe', function( $compile ) {
     return function( $scope, $element, $attrs ) {
 
         var compile = function( newHTML ) { // Create re-useable compile function
