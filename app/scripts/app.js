@@ -25,7 +25,12 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/video/:video_id', {
+        templateUrl: 'views/video.html',
+        controller: 'VideoCtrl',
+        controllerAs: 'video'
+      })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
