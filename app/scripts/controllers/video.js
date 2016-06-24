@@ -8,15 +8,19 @@
  * Controller of the capcoVideoApp
  */
 angular.module('capcoVideoApp')
-  .controller('VideoCtrl', function ($scope, videoService) {
+  .controller('VideoCtrl', function ($scope, $videoService, $sce) {
 
   	$scope.init=function(){
-    	$scope.video = videoService.getVideo();
+    	$scope.video = $videoService.getVideo();
   	}
+
+  $scope.trustUrl =function(url){
+    return $sce.trustAsResourceUrl(url);
+  }
 
   	$scope.init();
 
-  }).service('videoService', function(){
+  }).service('$videoService', function(){
     var currentVideo = {};
     
     var setVideo = function(video){

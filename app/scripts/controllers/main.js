@@ -10,7 +10,7 @@
 
 var capcoVideoApp = angular.module('capcoVideoApp');
 
-capcoVideoApp.controller('MainCtrl', function ($scope, videoService, $sce) {
+capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 
 	$scope.videos=[
 	    {
@@ -110,16 +110,12 @@ capcoVideoApp.controller('MainCtrl', function ($scope, videoService, $sce) {
 		return $sce.trustAsResourceUrl(url);
 	}
 
-	$scope.approveResource = function(url){
-		approveResource.approveResource(url);
-	}
-
 	$scope.select = function(index){
 		$scope.selectedVideo = $scope.videos[index];
 	}
 
 	$scope.setVideo = function(video){
-		videoService.setVideo(video);
+		$videoService.setVideo(video);
 	}
 
   });
