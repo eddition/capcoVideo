@@ -4,17 +4,21 @@
   <!-- MODAL TODO: extract into seperate template-->
   <div id="video-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg row">
+      <div class="video-title">{{selectedVideo.title}}</div>
       <div class="iframe-container">
           <iframe id='modal-video' ng-src="{{ trustUrl(selectedVideo.code) }}" frameborder='0'></iframe>
       </div>
       <div class='video-modal-info col-md-10 col-md-offset-1'>
+          
           <div class='col-md-8'>
-            {{selectedVideo.title}}
-            <br>
-            {{selectedVideo.code}}
-            <br>
-            {{selectedVideo.video_id}}
+            <h1 style='display:inline; margin-right:0.5em;'>tags: </h1>
+            <span ng-repeat="tag in selectedVideo.tags" style="font-size:30px;">
+              <span style='margin-right:0.5em;'>#{{tag}}</span>
+            </span>
+            <h2>Description</h2>
+            <p>{{selectedVideo.description}}</p>
           </div>
+
           <div class='col-md-4' 
                style='margin-top:1em; padding-bottom:1em'>
               <a href="#/video/{{selectedVideo.video_id}}"
@@ -23,11 +27,11 @@
                 <div class='modal-links'><h3>visit page</h3></div>
               </a> 
               <br>
-              <div class='modal-links'><h3>share to CIT</h3></div>
+              <a href=""><div class='modal-links'><h3>share to CIT</h3></div></a>
               <br>
-              <div class='modal-links'><h3>share to email</h3></div>
+              <a href=""><div class='modal-links'><h3>share to email</h3></div></a>
               <br>
-              <div class='modal-links'><h3>copy link</h3></div>
+              <a href=""><div class='modal-links'><h3>copy link</h3></div></a>
           </div>
 
       </div>
@@ -56,7 +60,7 @@
     <div class="col-md-3 video-container" ng-repeat="video in videos | filter:searchText">
       <a data-toggle="modal" data-target=".bd-example-modal-lg" ng-click="select($index); setVideo(video); approveResource(video.code)">
         <img class='thumbnails' src="{{video.thumbnail}}">
-        <p style='color:gray'>{{video.title}}</p>
+        <p>{{video.title}}</p>
       </a>
     </div>
   </div>

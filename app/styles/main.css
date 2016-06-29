@@ -16,6 +16,10 @@ body {
   font-family: 'TungstenMedium';
 }
 
+body p {
+  font-size: 20px;
+}
+
 h3{
   display: inline;
 }
@@ -46,8 +50,9 @@ h3{
 
 
 .glyphicon-search{
-  margin-top: 3em; 
-  margin-left: 3em;
+  font-size: 20px;
+  margin-top: 2em; 
+  margin-left: 2em;
   position: absolute;
   float: left;
 }
@@ -57,6 +62,7 @@ h3{
 }
 
 input#video-filter-input{
+  font-family: 'TungstenMedium';
   border: none;
   outline:none;
 }
@@ -76,6 +82,7 @@ input#video-filter-input{
 }
 
 .high-nav a h4 {
+  font-size: 24px;
   display: inline;
   margin-right: 1.5em;
   color:#575757;
@@ -115,6 +122,10 @@ iframe#modal-video{
     box-shadow: 4px 4px 2px #bdc3c7;
 }
 
+.modal-links h3{
+    font-weight: bold;
+}
+
 .modal-links:hover {
   color: black;
   background-color: #2ecc71;
@@ -143,6 +154,12 @@ img.thumbnails:hover {
 
 .container-narrow > hr {
   margin: 30px 0;
+}
+
+.modal-dialog .video-title {
+  left:0;
+  bottom: -68px;
+  z-index: 100;
 }
 
 /* Video Page */

@@ -18,6 +18,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1234,
 	        "code":"http://www.youtube.com/embed/XGSy3_Czz8k",
 	        "tags":["funny", "internal"],
+	        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 	        "thumbnail": "/images/thumbnails/thumb1.jpg"
 	    },
 	    {
@@ -25,6 +26,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1235,
 	        "code":"http://www.youtube.com/embed/1KgCP0QyfdY",
 			"tags":["sales", "internal"],
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 			"thumbnail": "/images/thumbnails/thumb2.jpg"
 	    },
 	    {
@@ -32,6 +34,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1236,
 	        "code":"http://www.youtube.com/embed/kqF8lcKTLw0",
 			"tags":["client", "internal"],
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 			"thumbnail": "/images/thumbnails/thumb3.jpg"
 	    },
 	    {
@@ -39,6 +42,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1237,
 	        "code":"http://www.youtube.com/embed/fNGAYD31fMo",
 			"tags":["funny", "internal"],
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 			"thumbnail": "/images/thumbnails/thumb4.jpg"
 	    },
 	    {
@@ -46,6 +50,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1238,
 	        "code":"http://www.youtube.com/embed/gimGOlbnNjk",
 	        "tags":["funny", "client", 'test'],
+	        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 	        "thumbnail": "/images/thumbnails/thumb5.jpg"
 	    },
 	    {
@@ -53,6 +58,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1239,
 	        "code":"http://www.youtube.com/embed/9l3DDSXkEQ0",
 	        "tags":["funny", "internal"],
+	        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 	        "thumbnail": "/images/thumbnails/thumb6.jpg"
 	    },
 	    {
@@ -60,6 +66,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1244,
 	        "code":"http://www.youtube.com/embed/1KgCP0QyfdY",
 			"tags":["sales", "internal"],
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 			"thumbnail": "/images/thumbnails/thumb7.jpg"
 	    },
 	    {
@@ -67,6 +74,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1254,
 	        "code":"http://www.youtube.com/embed/kqF8lcKTLw0",
 			"tags":["client", "internal"],
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 			"thumbnail": "/images/thumbnails/thumb8.jpg"
 	    },
 	    {
@@ -74,6 +82,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1264,
 	        "code":"http://www.youtube.com/embed/fNGAYD31fMo",
 			"tags":["funny", "internal"],
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 			"thumbnail": "/images/thumbnails/thumb9.jpg"
 	    },
 	    {
@@ -81,6 +90,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1274,
 	        "code":"http://www.youtube.com/embed/gimGOlbnNjk",
 	        "tags":["funny", "client"],
+	        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 	        "thumbnail": "/images/thumbnails/thumb10.jpg"
 	    },
 	    	    {
@@ -88,6 +98,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1284,
 	        "code":"http://www.youtube.com/embed/9l3DDSXkEQ0",
 	        "tags":["funny", "internal"],
+	        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 	        "thumbnail": "/images/thumbnails/thumb11.jpg"
 	    },
 	    {
@@ -95,6 +106,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1294,
 	        "code":"http://www.youtube.com/embed/1KgCP0QyfdY",
 			"tags":["sales", "internal"],
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 			"thumbnail": "/images/thumbnails/thumb12.jpg"
 	    },
 	    {
@@ -102,6 +114,7 @@ capcoVideoApp.controller('MainCtrl', function ($scope, $videoService, $sce) {
 	        "video_id": 1288,
 	        "code":"http://www.youtube.com/embed/kqF8lcKTLw0",
 			"tags":["client", "internal"],
+			"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu consectetur lectus, id porta urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet nibh vel leo euismod convallis convallis ut erat. Integer purus velit, convallis non vestibulum vel, faucibus vitae felis. Phasellus.",
 			"thumbnail": "/images/thumbnails/thumb13.jpg"
 	    }
 	];
