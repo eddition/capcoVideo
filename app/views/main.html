@@ -3,11 +3,11 @@
 
   <!-- MODAL TODO: extract into seperate template-->
   <div id="video-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-lg row">
       <div class="iframe-container">
           <iframe id='modal-video' ng-src="{{ trustUrl(selectedVideo.code) }}" frameborder='0'></iframe>
       </div>
-      <div class='video-modal-info row'>
+      <div class='video-modal-info col-md-10 col-md-offset-1'>
           <div class='col-md-8'>
             {{selectedVideo.title}}
             <br>
@@ -20,14 +20,14 @@
               <a href="#/video/{{selectedVideo.video_id}}"
                  onclick="$('body').removeClass('modal-open');
                           $('.modal-backdrop').remove(); ">
-                <h3>visit page</h3>
+                <div class='modal-links'><h3>visit page</h3></div>
               </a> 
               <br>
-              <h3>share to CIT</h3> 
+              <div class='modal-links'><h3>share to CIT</h3></div>
               <br>
-              <h3>share to email</h3> 
+              <div class='modal-links'><h3>share to email</h3></div>
               <br>
-              <h3>copy link</h3>
+              <div class='modal-links'><h3>copy link</h3></div>
           </div>
 
       </div>
@@ -46,9 +46,9 @@
   </span>
 
   <div style="text-align:center; margin-top:5em;">
-      <a href=""><h3>home</h3></a>
-      <a href=""><h3>explore</h3></a>
-      <a href=""><h3>subscriptions</h3></a>
+      <a href=""><h3 style="margin:2em; font-size:35px; font-weight: bold;">home</h3></a>
+      <a href=""><h3 style="margin:2em; font-size:35px; font-weight: bold;">explore</h3></a>
+      <a href=""><h3 style="margin:2em; font-size:35px; font-weight: bold;">subscriptions</h3></a>
   </div>
 
   <div style='margin-left:20px' class="row">
